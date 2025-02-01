@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Visualization - Lab 1</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="dropdowns.js"></script>
+    <script src="plots.js"></script>
+
+</head>
+
+<body>
+
+    <div id="menu">
+        <div class="menu-item">Menu</div>
+        <div class="menu-item-1" onclick="plotFunction()">Plot</div>
+        <div class="menu-toggle-opts">
+            <div class="toggle-opts" style="margin-right: 2.5px;" onclick="verticalPlot()">Vertical</div>
+            <div class="toggle-opts" style="margin-left: 2.5px;" onclick="horizontalPlot()">Horizontal</div>
+        </div>
+        <div class="menu-item-1" onclick="scatterFunction()" style="font-weight: bolder">Scatter</div>
+        <div class="menu-item-1">
+            <input type="radio" id="X" name="axis" value="1" checked>
+            <label for="X">X-axis</label>
+        </div>
+        <div class="menu-item-1">
+            <input type="radio" id="Y" name="axis" value="1">
+            <label for="Y">Y-axis</label>
+        </div>
+        <div class="menu-item-1" onclick="assign()" style="font-weight: bolder">Attributes</div>
+    </div>
+
+    <div id="content">
+        <div id="graph-heading">
+            <h1>Top Hits on Spotify from 2000-2019</h1>
+        </div>
+        <svg id="graph-canvas"></svg>
+    </div>
+
+</body>
+
+</html>
