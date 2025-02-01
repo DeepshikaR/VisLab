@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Visualization - Lab 2b</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="module" src="../static/helperFns.js"></script>
+    <script type="module" src="../static/plotGraphs.js"></script>
+</head>
+<body>
+    <div id="graph-heading">
+        <h1>Socio-Economic Indicators of Countries</h1>
+    </div>
+
+    <div id="content-1">
+        <div id="content">
+            <h1>PCA Scree Plot</h1>
+            <div id="pca-chart"></div>
+        </div>
+        <div id="content">
+            <h1>PCA-based Biplot</h1>
+            <div id="bi-plot"></div>
+        </div>
+        <div id="content" style="border-right: 2px solid black">
+            <h1>Top 4 Attributes</h1>
+            <table id="imp-columns"></table>
+        </div>                
+    </div>
+
+    <div id="content-2">     
+        <div id="content">
+            <h1>K-Means MSE Plot</h1>
+            <div id="mse-chart"></div>
+        </div>   
+        <div id="content">
+            <h1>MDS Data Scatterplot</h1>
+            <div id="mds-scatter-data"></div>
+        </div>  
+        <div id="content" style="border-right: 2px solid black">
+            <h1>Scatterplot Matrix</h1>
+            <div id="scatter-plot"></div>
+        </div>      
+       
+    </div>
+
+    <div id="content-3">     
+        <div id="content">
+            <h1>MDS Variables Scatterplot</h1>
+            <div id="mds-scatter-var"></div>
+        </div>   
+        <div id="content" style="border-right: 2px solid black">
+            <h1>Parallel-Coordinates Plot</h1>
+            <div id="pcp"></div>
+            <p> <b>Legend</b><br>
+                CM: Child Mortality, EXP: Exports, HS: Health Spending, IMP: Imports,<br>
+                INC: Income, INF: Inflation, LE: Life Expectancy, <br>
+                TF: Total Fertility, GDP: GDP per Capita
+            </p>
+        </div>      
+       
+    </div>
+
+</html>
